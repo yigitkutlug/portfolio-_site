@@ -26,7 +26,6 @@ Projenin temel amacı; kişisel bilgileri, projeleri ve içerikleri dinamik bir 
 ├── package-lock.json
 ├── views/
 ├── public/
-└── node_modules/ (GitHub'a eklenmez)
 
 
 
