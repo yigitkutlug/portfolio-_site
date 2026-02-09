@@ -36,7 +36,7 @@ Projenin temel amacı; kişisel bilgileri, projeleri ve içerikleri dinamik bir 
 Projeyi yerel ortamda çalıştırmak için aşağıdaki adımları izleyin:
 
 
-git clone https://github.com/kullanici-adi/repo-adi.git
+git clone https://github.com/yigitkutlug/portfolio-_site.git
 cd repo-adi
 npm install
 npm start
