@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= name %> | Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/icons/icon.png">
+<link rel="apple-touch-icon" href="/icons/icon.png">
+
+</head>
+<body>
+<div class="cursor-glow"></div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-container">
+
+    <div class="hero-left">
+      <h1>NAME</h1>
+      <h2>Full-Stack Developer</h2>
+      <p>Node.js • Express • AI • Web Uygulamaları</p>
+
+      <div class="buttons">
+        <a href="#projects">Projeler</a>
+        <a href="#contact" class="outline">İletişim</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="profile-card">
+        <img src="/img/profile.png" alt="name">
+        <h3>Backend & AI Focused</h3>
+        <span>Node.js • Express • MongoDB</span>
+      </div>
+    </div>
+
+  </div>
+  <div class="mouse-glow"></div>
+
+</section>
+
+
+
+
+<!-- ABOUT -->
+
+<section class="about">
+  <div class="about-grid">
+    
+    <!-- SOL -->
+    <div class="about-texts">
+      <h3>Hakkımda</h3>
+
+      <p>
+      YOUR İNF
+      </p>
+
+      <p>
+        YOUR İNF 
+      </p>
+
+      <p>
+        YOUR İNF
+      </p>
+    </div>
+
+    <!-- SAĞ -->
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-title">Odak</span>
+        <span class="stat-value">Backend & API</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-title">Teknolojiler</span>
+        <span class="stat-value">Node.js, Express</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-title">Eğitim</span>
+        <span class="stat-value">Bilgisayar Müh.</span>
+      </div>
+
+      <div class="stat">
+        <span class="stat-title">Yaklaşım</span>
+        <span class="stat-value">Temiz & sürdürülebilir kod</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- SKILLS -->
+
+<section class="skills">
+  <h3>Teknolojiler</h3>
+  <div class="skill-list">
+    <% skills.forEach(skill => { %>
+      <span><%= skill %></span>
+    <% }) %>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+
+<section class="projects" id="projects">
+  <h3>Projeler</h3>
+
+  <% projects.forEach(p => { %>
+    <div class="project-card">
+      <div class="project-info">
+        <h4><%= p.name %></h4>
+        <p><%= p.desc %></p>
+        <small><%= p.tech %></small>
+      </div>
+
+      <% if (p.link) { %>
+        <a href="<%= p.link %>" target="_blank" class="project-link">
+          İncele →
+        </a>
+      <% } %>
+    </div>
+  <% }) %>
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+  <h3>İletişim</h3> 
+  
+  <br>
+    <br>
+      <br>
+  
+ <a
+    href="/cv/your_cv.pdf"
+    download
+    class="btn btn-primary"
+  >
+    CV indir (PDF)
+  </a>
+  
+    <br>
+      <br>
+        <br>
+
+
+  <p class="contact-intro">
+    Bir proje, fikir ya da sadece tanışmak için bana buradan ulaşabilirsin.
+  </p>
+
+  <div class="contact-list">
+    <a href="mailto:Your_Mail">
+      <img src="/icons/mail.svg" alt="">
+      <span>Your_Mail</span>
+    </a>
+
+    <a href="Your_Git_Link" target="_blank">
+      <img src="/icons/github.svg" alt="">
+      <span>Your_Git_Link</span>
+    </a>
+
+    <a href="Your_Linkedin_Link" target="_blank">
+      <img src="/icons/linkedin.svg" alt="">
+      <span>Your_Linkedin_Link</span>
+    </a>
+
+    <a href="Your_Website_Link" target="_blank">
+      <img src="/icons/globe.svg" alt="">
+      <span>Your_Website_Link</span>
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  © 2026 Your_Name 
+</footer>
+<script src="/js/script.js"></script>
+
+</body>
+</html>
