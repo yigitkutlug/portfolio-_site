@@ -37,7 +37,7 @@ Projeyi yerel ortamda çalıştırmak için aşağıdaki adımları izleyin:
 
 
 git clone https://github.com/yigitkutlug/portfolio-_site.git
-cd repo-adi
+cd portfolio-_site
 npm install
 npm start
 
